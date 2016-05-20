@@ -1,0 +1,88 @@
+$siva:#6D6D6D;
+
+
+body {
+  font-size: 100%;
+  padding: 0;
+  /* Eliminisanje automatskog paddinga */
+  margin: 0;
+  /*  na HTML dokumentu */
+  font-family: Arial, Helvetica, sans-serif, times;
+  margin: 60px; }
+
+a, a:visited {
+  text-decoration: none;
+  color: blue; }
+
+.cf:before,
+.cf:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */ }
+
+.cf:after {
+  clear: both; }
+
+h1 {
+  font-family: 'Nosifer', Arial, serif;
+  font-weight: 400;
+  color: red; }
+
+p {
+  font-family: 'Alegreya+Sans', Arial, serif;
+  font-weight: 400;
+  color: #6D6D6D; }
+
+.clear {
+  float: none; }
+
+img {
+  vertical-align: middle;
+  padding-right: 5px; }
+
+.container1 {
+  width: 100%;
+  height: 300px; }
+
+.container2 {
+  width: 100%;
+  height: 500px; }
+
+.html {
+  width: 26%;
+  float: left;
+  padding-left:5%; }
+
+span {
+  padding-left: 5px; }
+
+.php {
+  width: 26%;
+  float: left;
+  padding-left: 5%; }
+
+  .video {
+  width: 26%;
+  float: left;
+  padding-left: 5%;
+  }
+
+.firme {
+  width: 24%;
+  float: left;
+  padding-left: 24%; }
+
+.hardware {
+  width: 38%;
+  float: left;
+  padding-left: 10%;
+  
+}
+
+/*# sourceMappingURL=default.css.map */
+
+
+@media screen  and (max-width: 690px) {
+    h1 {font-size:1.5em;}
+}
