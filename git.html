@@ -1,0 +1,80 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+
+  <style media="screen">
+  html {padding:30px;}
+  p {font-style: italic;}
+  code {display: block; font-size: 1.3em}
+
+  </style>
+</head>
+
+<h1>GIT commands</h1>
+
+<h3>Git config</h3>
+<code>git config --list</code>
+<p>Config username and email</p>
+<code>git config --global user.name "Milan Vukovic"</code>
+<code>git config --global user.email "mildzan@gmail.com"</code>
+
+<h3>Creating Repository</h3>
+<p>Navigate to your directory</p>
+<code>git init</code>
+
+<h3>Adding folders or files to repo</h3>
+<p>Adding to stage</p>
+<code>git add .</code>
+<p>Adding to repo</p>
+<code>git commit -m "some mesagge"</code>
+<p>View commits</p>
+<code>git log</code>
+<p>View specific Author</p>
+<code>git log --author="Milan"</code>
+<p>View status</p>
+<code>git status</code>
+<p>View differents between files</p>
+<code>git diff</code>
+<code>git diff --staged</code>
+
+<h3>Deleting files</h3>
+<code>git rm file.name</code>
+<code>git commit -m "deleting file"</code>
+<p>We can later go to this point of time and roll back file</p>
+
+<h3>Move and rename files</h3>
+<code>git mv old.name new.name</code>
+<code>git mv old.name newfolder/new.name</code>
+<code>git commit -m "renamed files"</code>
+
+<h3>Not accepting changes to a file</h3>
+<p>To see which file is modified</p>
+<code>git status</code>
+<code>git checkout -- file.name</code>
+<p>Get back file from a stageing ares</p>
+<code>git reset HEAD file.name</code>
+
+<h3>Gettin old version from the repo</h3>
+<p>First get log to see commits</p>
+<code>git log</code>
+<p>Then use command checkout and couple letters from commit</p>
+<code>git checkout 01e7... -- file.name</code>
+<code>git commit -am "Rollback"</code>
+
+<h3>Adding files directly to repo, skipping stage area</h3>
+<code>git commit -am "Adding any changes drectly but also i deleting files"</code>
+
+<h3>Adding new repo remotely</h3>
+<p class="italic">First create repo on github</p>
+<code>git remote add (repo name) (remote url)</code>
+<code>git remote add exampleGithub https://github.com/Mildza/links</code>
+<code>git remote - check repo</code>
+
+<h3>Adding files remotely</h3>
+<code>git push -u (repo name) master</code>
+
+<body>
+
+</body>
+</html>
