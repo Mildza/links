@@ -49,7 +49,7 @@ img {
 .html {
   width: 26%;
   float: left;
-  padding-left:5%; }
+  padding-left: 5%; }
 
 span {
   padding-left: 5px; }
@@ -59,11 +59,10 @@ span {
   float: left;
   padding-left: 5%; }
 
-  .video {
+.video {
   width: 26%;
   float: left;
-  padding-left: 5%;
-  }
+  padding-left: 5%; }
 
 .firme {
   width: 24%;
@@ -76,10 +75,15 @@ span {
   padding-left: 10%; }
 
 /*# sourceMappingURL=default.css.map */
+@media screen and (max-width: 690px) {
+  body {
+    margin: 0px; }
 
+  h1 {
+    font-size: 1.5em; }
 
-@media screen  and (max-width: 690px) {
-    body {margin: 0px;}
-    h1 {font-size:1.5em;}
-    .html, .php, .video, .firme, .hardware {padding-left:10%; width:90%;}
-}
+  .html, .php, .video, .firme, .hardware {
+    padding-left: 10%;
+    width: 90%; } }
+
+/*# sourceMappingURL=default.css.map */

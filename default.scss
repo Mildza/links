@@ -1,6 +1,3 @@
-$siva:#6D6D6D;
-
-
 body {
   font-size: 100%;
   padding: 0;
@@ -76,13 +73,13 @@ span {
 .hardware {
   width: 38%;
   float: left;
-  padding-left: 10%;
-  
-}
+  padding-left: 10%; }
 
 /*# sourceMappingURL=default.css.map */
 
 
 @media screen  and (max-width: 690px) {
+    body {margin: 0px;}
     h1 {font-size:1.5em;}
+    .html, .php, .video, .firme, .hardware {padding-left:10%; width:90%;}
 }

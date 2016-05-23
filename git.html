@@ -6,7 +6,13 @@
   <style media="screen">
   html {padding:30px;}
   p {font-style: italic;}
-  code {display: block; font-size: 1.3em}
+  code {display: block;
+        font-size: 1.3em;
+        max-width: 500px;
+        border-radius: 5px;
+        background-color: #DEDEDE;
+        padding: 10px;
+      }
 
   </style>
 </head>
@@ -16,7 +22,7 @@
 <h3>Git config</h3>
 <code>git config --list</code>
 <p>Config username and email</p>
-<code>git config --global user.name "Milan Vukovic"</code>
+<code>git config --global user.name "Milan Vukovic" </code>
 <code>git config --global user.email "mildzan@gmail.com"</code>
 
 <h3>Creating Repository</h3>
@@ -52,7 +58,7 @@
 <p>To see which file is modified</p>
 <code>git status</code>
 <code>git checkout -- file.name</code>
-<p>Get back file from a stageing ares</p>
+<p>Get back file from a stageing areas</p>
 <code>git reset HEAD file.name</code>
 
 <h3>Gettin old version from the repo</h3>
