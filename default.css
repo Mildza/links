@@ -79,5 +79,7 @@ span {
 
 
 @media screen  and (max-width: 690px) {
+    body {margin: 0px;}
     h1 {font-size:1.5em;}
+    .html, .php, .video, .firme, .hardware {padding-left:10%; width:90%;}
 }
