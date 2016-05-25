@@ -4,15 +4,17 @@
   <title>Document</title>
 
   <style media="screen">
-  html {padding:30px;}
-  p {font-style: italic;}
-  code {display: block;
-        font-size: 1.3em;
-        max-width: 500px;
+  html {padding:30px;width:700px;margin:auto auto;}
+  p {margin:0; padding:0;}
+  p:before {margin:20px;}
+
+  pre {display: block;
+        font-size: 1.1em;
+        max-width: 700px;
         border-radius: 5px;
         background-color: #DEDEDE;
         padding: 10px;
-      }
+        }
 
   </style>
 </head>
@@ -20,89 +22,91 @@
 <h1>GIT commands</h1>
 
 <h3>Git config</h3>
-<code>git config --list</code>
+<pre>git config --list</pre>
 <p>Config username and email</p>
-<code>git config --global user.name "Milan Vukovic" </code>
-<code>git config --global user.email "mildzan@gmail.com"</code>
+<pre>git config --global user.name "Milan Vukovic"
+git config --global user.email "mildzan@gmail.com"
+</pre>
 
 <h3>Creating Repository</h3>
 <p>Navigate to your directory</p>
-<code>git init</code>
+<pre>git init</pre>
 
 <h3>Adding folders or files to repo</h3>
 <p>Adding to stage</p>
-<code>git add .</code>
+<pre>git add .</pre>
 <p>Adding to repo</p>
-<code>git commit -m "some mesagge"</code>
+<pre>git commit -m "some mesagge"</pre>
 <p>View commits</p>
-<code>git log</code>
+<pre>git log</pre>
 <p>View specific Author</p>
-<code>git log --author="Milan"</code>
+<pre>git log --author="Milan"</pre>
 <p>View status</p>
-<code>git status</code>
+<pre>git status</pre>
 <p>View differents between files</p>
-<code>git diff</code>
-<code>git diff --staged</code>
+<pre>git diff
+git diff --staged
+</pre>
 
 <h3>Deleting files</h3>
-<code>git rm file.name</code>
-<code>git commit -m "deleting file"</code>
+<pre>git rm file.name
+git commit -m "deleting file"</pre>
 <p>We can later go to this point of time and roll back file</p>
 
 <h3>Move and rename files</h3>
-<code>git mv old.name new.name</code>
-<code>git mv old.name newfolder/new.name</code>
-<code>git commit -m "renamed files"</code>
+<pre>git mv old.name new.name
+git mv old.name newfolder/new.name
+git commit -m "renamed files"</pre>
 
 <h3>Not accepting changes to a file</h3>
 <p>To see which file is modified</p>
-<code>git status</code>
-<code>git checkout -- file.name</code>
+<pre>git status
+git checkout -- file.name</pre>
 <p>Get back file from a stageing areas</p>
-<code>git reset HEAD file.name</code>
+<pre>git reset HEAD file.name</pre>
 
 <h3>Gettin old version from the repo</h3>
 <p>First get log to see commits</p>
-<code>git log</code>
+<pre>git log</pre>
 <p>Then use command checkout and couple letters from commit</p>
-<code>git checkout 01e7... -- file.name</code>
-<code>git commit -am "Rollback"</code>
+<pre>git checkout 01e7... -- file.name
+git commit -am "Rollback"</pre>
 
 <h3>Adding files directly to repo, skipping stage area</h3>
-<code>git commit -am "Adding any changes drectly but also i deleting files"</code>
+<pre>git commit -am "Adding any changes drectly but also i deleting files"</pre>
 
 <h3>Adding new repo remotely</h3>
 <p class="italic">First create repo on github</p>
-<code>git remote add (repo name) (remote url)</code>
-<code>git remote add exampleGithub https://github.com/Mildza/links</code>
-<code>git remote - check repo</code>
+<pre>git remote add (repo name) (remote url)
+git remote add exampleGithub https://github.com/Mildza/links
+git remote - check repo</pre>
 
 <h3>Adding files remotely</h3>
-<code>git push -u (repo name) master</code>
+<pre>git push -u (repo name) master</pre>
 
 <h3>Fetching files from remote repo</h3>
-<code>git pull (repo name)</code>
-<code>git fetch (repo name)</code>
+<pre>git pull (repo name)
+git fetch (repo name)</pre>
 
 <h3>Branches</h3>
 <p>To see all branches</p>
-<code>git branch -a</code>
+<pre>git branch -a</pre>
 <p>Check local branch</p>
-<code>git branch</code>
+<pre>git branch</pre>
 <p>Switch beetwen branches</p>
-<code>git checkout BranchName</code>
+<pre>git checkout BranchName</pre>
 <p>Make new branch</p>
-<code>git checkout -b newbranch</code>
+<pre>git checkout -b newbranch</pre>
 <p>Commit to new branch</p>
-<code>git commit -am "new feature to newbranch"</code>
+<pre>git commit -am "new feature to newbranch"</pre>
 <p>Crete new branch remotely</p>
-<code>git push origin newbranch</code>
+<pre>git push origin newbranch</pre>
 <p>Merge branch</p>
-<code>git merge newbranch</code>
+<pre>git merge newbranch</pre>
 <p>Delete local branch</p>
-<code>git branch -d newbranch</code>
+<pre>git branch -d newbranch</pre>
 <p>Delete remote branch</p>
-<code>git push origin :newbranch</code>
+<pre>git push origin :newbranch</pre>
 
 <body>
 

@@ -9,10 +9,9 @@ body {
 
 a, a:visited {
   text-decoration: none;
-  color: blue; }
+  color: #206bcf; }
 
-.cf:before,
-.cf:after {
+.cf:before, .cf:after {
   content: " ";
   /* 1 */
   display: table;
